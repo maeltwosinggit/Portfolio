@@ -139,6 +139,26 @@ nav button i{
     gap: 8px;
 }
 
+.hero .left-section .skills {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center the items */
+    margin-top: 60px; /* Add some gap on the top */
+}
+
+.hero .left-section .skills h3 {
+    margin-right: 20px; /* Adjust margin between h3 and skill-icons */
+    margin-bottom: 0; /* Remove bottom margin to prevent extra space */
+}
+
+.hero .left-section .skills .skill-icons {
+    flex: 1; /* Allow the icons to take up remaining space */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the icons horizontally */
+    font-size: 50px; /* Adjust icon size */
+    gap: 20px; /* Add spacing between icons */
+}
+
+
 .hero .left-section .top .buttons button,
 .projects .inner > button,
 .contact .items .item button{
