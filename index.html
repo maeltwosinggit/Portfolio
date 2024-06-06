@@ -17,9 +17,9 @@
         </div>
         <div class="nav-links">
             <a class="selected" href="index.html">Home</a>
-            <a href="works.html">Works</a>
+            <a href="works.html">Project Showcase</a>
             <a href="single-work.html">Single Work</a>
-            <a href="blog.html">Blog</a>
+            <!-- <a href="blog.html">Blog</a> -->
             <a href="about.html">About</a>
         </div>
     </nav>
@@ -31,12 +31,73 @@
 
             <p>Leveraging analytical skills and engineering principles to build robust data solutions. 
                 Passionate about transforming data into actionable insights and driving technological advancements.</p>
-            <button>Download Resume</button>
+            <button class="download-button" onclick="downloadResume()">Download Resume</button>
+
+            <script>
+                function downloadResume() {
+                    const link = document.createElement('a');
+                    // URL-encoded path to your resume file
+                    const filePath = 'assets/UMIA%20Resume%20(as%20of%2026th%20November%202023).pdf';
+                    link.href = filePath;
+                    link.download = 'UMIA Resume (as of 26th November 2023).pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script>
+            
         </div>
         <img src="assets/UMIA.png">
     </div>
 
-    <div class="recent">
+    <div class="about">
+        <p>About My Works</p>
+        <h2>Explore my work in data analysis, engineering, and front-end development</h2>
+        <div class="items">
+            <div class="item">
+                <div class="inner">
+                    <!-- <img src="assets/UMIA.png"> -->
+                    <div class="inner-top">
+                        <div class="icon-card-1"></div>
+                    <a href="#">Data Analysis and Governance</a>
+                    
+                    </div>
+                    <div class="inner-bottom"><p>Using stats and software to analyze data, drive decisions, and ensure data quality, standardization, and security.
+                    </p></div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner">
+                    <!-- <img src="assets/UMIA.png"> -->
+                    <div class="inner-top">
+                        <div class="icon-card-2"></div>
+                    <a href="#">Data Engineering and Database Management</a>
+                    
+                    </div>
+                    <div class="inner-bottom">
+                        <p>Creating scalable data pipelines and architectures for seamless data flow. Managing project databases for data ingestion, editing, querying, and supporting governance.
+                    </p></div>
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="inner">
+                    <!-- <img src="assets/UMIA.png"> -->
+                    <div class="inner-top">
+                        <div class="icon-card-3"></div>
+                    <a href="#">Front-End Development</a>
+                    
+                    </div>
+                    <div class="inner-bottom">
+                        <p>Crafting visually appealing and responsive interfaces using HTML, CSS, and Javascript frameworks like React and Vue
+                    </p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="recent">
         <div class="header">
             <h4>Recent Posts</h4>
             <a href="blog.html">View all</a>
@@ -63,25 +124,13 @@
                     corporis facere ex voluptatibus laudantium voluptates quos.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="separator">
-        <h4>Featured Works</h4>
+        <h4>Featured Projects</h4>
     </div>
 
     <div class="featured">
-        <div class="item">
-            <img src="assets/item-1.jpg">
-            <div class="details">
-                <h3>Capture Screenshots</h3>
-                <div class="item-info">
-                    <div class="year-badge">2023</div>
-                    <h4>JavaScript</h4>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos ratione beatae voluptas
-                    aliquam illo maxime.</p>
-            </div>
-        </div>
         <div class="item">
             <img src="assets/item-2.jpg">
             <div class="details">
@@ -95,15 +144,25 @@
             </div>
         </div>
         <div class="item">
-            <img src="assets/item-3.jpg">
+            <img src="assets/Project2.png">
             <div class="details">
-                <h3>Music Platform UI</h3>
+                <h3>Project Management Dashboard</h3>
                 <div class="item-info">
-                    <div class="year-badge">2024</div>
-                    <h4>UI Design</h4>
+                    <div class="year-badge">2023</div>
+                    <h4>MS Excel | MS PowerBI</h4>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos ratione beatae voluptas
-                    aliquam illo maxime.</p>
+                <p>Developed a Project Management Dashboard using MS PowerBI, providing real-time insights for efficient project tracking and decision-making.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="assets/Project1.png">
+            <div class="details">
+                <h3>Portfolio #1 - Global Covid-19 Cases</h3>
+                <div class="item-info">
+                    <div class="year-badge">2022</div>
+                    <h4>SQL | MS Excel | Tableau</h4>
+                </div>
+                <p>Displaying a dashboard consist of global Covid-19 cases between 2019 to 2022.</p>
             </div>
         </div>
     </div>
