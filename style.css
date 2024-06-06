@@ -70,7 +70,13 @@ nav .nav-links a.selected{
 
 .main .info h1{
     font-size: 44px;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
+}
+
+.main .info .subtitle{
+    font-size: 1.2em;
+    margin-bottom: 48px;
+    color: #383838;
 }
 
 .main .info p{
